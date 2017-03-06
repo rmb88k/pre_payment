@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "web_AUI", "web_AUI\", "{0A9AA424-AD02-493B-B7E3-F9263C080C3D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49755"
+		Debug.AspNetCompiler.PhysicalPath = "web_AUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49755\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49755"
+		Release.AspNetCompiler.PhysicalPath = "web_AUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49755\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49755"
+		SlnRelativePath = "web_AUI\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebAUI", "WebAUI\", "{78CA133E-B812-4AA3-BA79-2F78458EAF15}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49763"
+		Debug.AspNetCompiler.PhysicalPath = "WebAUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49763\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49763"
+		Release.AspNetCompiler.PhysicalPath = "WebAUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49763\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49763"
+		SlnRelativePath = "WebAUI\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A9AA424-AD02-493B-B7E3-F9263C080C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9AA424-AD02-493B-B7E3-F9263C080C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CA133E-B812-4AA3-BA79-2F78458EAF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CA133E-B812-4AA3-BA79-2F78458EAF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
