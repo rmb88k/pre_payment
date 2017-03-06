@@ -303,3 +303,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 *.config
+pre_payment_management/WebAUI/Web.config
