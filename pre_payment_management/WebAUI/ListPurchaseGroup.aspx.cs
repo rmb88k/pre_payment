@@ -39,7 +39,7 @@ public partial class ListPurchaseGroup : System.Web.UI.Page
             return;
         }
 
-        //分页
+        //分页1
         PageNav1.DataTableSource = ds.Tables[0];
         PageNav1.PageSize = PAGESIZE;
         AspNetPager1.RecordCount = ds.Tables[0].Rows.Count;
