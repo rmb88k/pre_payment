@@ -38,11 +38,10 @@ namespace LXS.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into MD_PurchaseGroup(");
-            strSql.Append("ID,PurchaseGroupCode,PurchaseGroupCodeName,Category,ERS_Layout,PurchaseRequestor,STR_PurchaseGroup,FirstReviewer,SecondReviewer,FirstApprover,SecondApprover,CopyToACC,CreateBy,CreateDate,EditBy,EditDate,FlagDelete)");
+            strSql.Append("PurchaseGroupCode,PurchaseGroupCodeName,Category,ERS_Layout,PurchaseRequestor,STR_PurchaseGroup,FirstReviewer,SecondReviewer,FirstApprover,SecondApprover,CopyToACC,CreateBy,CreateDate,EditBy,EditDate,FlagDelete)");
             strSql.Append(" values (");
-            strSql.Append("@ID,@PurchaseGroupCode,@PurchaseGroupCodeName,@Category,@ERS_Layout,@PurchaseRequestor,@STR_PurchaseGroup,@FirstReviewer,@SecondReviewer,@FirstApprover,@SecondApprover,@CopyToACC,@CreateBy,@CreateDate,@EditBy,@EditDate,@FlagDelete)");
+            strSql.Append("@PurchaseGroupCode,@PurchaseGroupCodeName,@Category,@ERS_Layout,@PurchaseRequestor,@STR_PurchaseGroup,@FirstReviewer,@SecondReviewer,@FirstApprover,@SecondApprover,@CopyToACC,@CreateBy,@CreateDate,@EditBy,@EditDate,@FlagDelete)");
             SqlParameter[] parameters = {
-                    new SqlParameter("@ID", SqlDbType.Int,4),
                     new SqlParameter("@PurchaseGroupCode", SqlDbType.NVarChar,50),
                     new SqlParameter("@PurchaseGroupCodeName", SqlDbType.NVarChar,250),
                     new SqlParameter("@Category", SqlDbType.NVarChar,50),
@@ -59,23 +58,23 @@ namespace LXS.DAL
                     new SqlParameter("@EditBy", SqlDbType.NVarChar,50),
                     new SqlParameter("@EditDate", SqlDbType.SmallDateTime),
                     new SqlParameter("@FlagDelete", SqlDbType.Bit,1)};
-            parameters[0].Value = model.ID;
-            parameters[1].Value = model.PurchaseGroupCode;
-            parameters[2].Value = model.PurchaseGroupCodeName;
-            parameters[3].Value = model.Category;
-            parameters[4].Value = model.ERS_Layout;
-            parameters[5].Value = model.PurchaseRequestor;
-            parameters[6].Value = model.STR_PurchaseGroup;
-            parameters[7].Value = model.FirstReviewer;
-            parameters[8].Value = model.SecondReviewer;
-            parameters[9].Value = model.FirstApprover;
-            parameters[10].Value = model.SecondApprover;
-            parameters[11].Value = model.CopyToACC;
-            parameters[12].Value = model.CreateBy;
-            parameters[13].Value = model.CreateDate;
-            parameters[14].Value = model.EditBy;
-            parameters[15].Value = model.EditDate;
-            parameters[16].Value = model.FlagDelete;
+
+            parameters[0].Value = model.PurchaseGroupCode;
+            parameters[1].Value = model.PurchaseGroupCodeName;
+            parameters[2].Value = model.Category;
+            parameters[3].Value = model.ERS_Layout;
+            parameters[4].Value = model.PurchaseRequestor;
+            parameters[5].Value = model.STR_PurchaseGroup;
+            parameters[6].Value = model.FirstReviewer;
+            parameters[7].Value = model.SecondReviewer;
+            parameters[8].Value = model.FirstApprover;
+            parameters[9].Value = model.SecondApprover;
+            parameters[10].Value = model.CopyToACC;
+            parameters[11].Value = model.CreateBy;
+            parameters[12].Value = model.CreateDate;
+            parameters[13].Value = model.EditBy;
+            parameters[14].Value = model.EditDate;
+            parameters[15].Value = model.FlagDelete;
 
             int rows = DbHelperSQL.ExecuteSql(strSql.ToString(), parameters);
             if (rows > 0)
@@ -94,7 +93,6 @@ namespace LXS.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("update MD_PurchaseGroup set ");
-            strSql.Append("ID=@ID,");
             strSql.Append("PurchaseGroupCode=@PurchaseGroupCode,");
             strSql.Append("PurchaseGroupCodeName=@PurchaseGroupCodeName,");
             strSql.Append("Category=@Category,");

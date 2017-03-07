@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebAUI", "WebAUI\", "{78CA133E-B812-4AA3-BA79-2F78458EAF15}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		ProjectReferences = "{46d20800-61f0-4399-a9d9-5006d8a26f79}|Common.dll;{87dea5fc-f101-432c-afcf-87e08aaecdce}|BLL.dll;{AE993BF1-008B-495D-9898-E181F83A7670}|DAL.dll;{440DEB86-3404-4373-9F07-224CA6A636B7}|Model.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49763"
 		Debug.AspNetCompiler.PhysicalPath = "WebAUI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49763\"

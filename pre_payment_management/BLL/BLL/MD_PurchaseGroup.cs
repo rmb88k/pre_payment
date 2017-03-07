@@ -133,7 +133,10 @@ namespace LXS.BLL
 
         #endregion  BasicMethod
         #region  ExtensionMethod
-
+        public DataSet GetListV(string strwhere) {
+            DataSet ds = new DataSet();
+            return ds;
+        }
         #endregion  ExtensionMethod
     }
 }
