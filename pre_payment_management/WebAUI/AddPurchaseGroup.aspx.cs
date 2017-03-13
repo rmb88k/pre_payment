@@ -104,6 +104,6 @@ public partial class AddPurchaseGroupCode : System.Web.UI.Page
 
         LXS.BLL.MD_PurchaseGroup bll = new LXS.BLL.MD_PurchaseGroup();
         bll.Add(model);
-        MessageBox.ShowAndRedirect(this, "保存成功！", "ListPurchaseGroupCode.aspx");
+        MessageBox.ShowAndRedirect(this, "保存成功！", "ListPurchaseGroup.aspx");
     }
 }

@@ -8,15 +8,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div id="starter-template" style="margin-top:150px;">
+    <div id="starter-template">
     <div id="SearchBar">
         Purchase Group<asp:TextBox ID="tbPurchaseGroupCode" runat="server"></asp:TextBox>
-        <asp:Button ID="btSearch" runat="server" OnClick="btSearch_Click" Text="Search" />
-        <asp:Button ID="btNew" runat="server" OnClick="btNew_Click" text="Create New"/>
-
+        <asp:Button ID="btSearch" runat="server" OnClick="btSearch_Click" Text="Search" CssClass="btn btn-primary"/>
+        <asp:Button ID="btNew" runat="server" OnClick="btNew_Click" text="Create New" CssClass="btn btn-primary"/>
+        <br /><br />
 
     </div>
-    <asp:GridView ID="gv" runat="server" AutoGenerateColumns="False">
+    <asp:GridView ID="gv" runat="server" AutoGenerateColumns="False" CssClass="table">
     
         <Columns>
             <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" ItemStyle-HorizontalAlign="Center"  /> 

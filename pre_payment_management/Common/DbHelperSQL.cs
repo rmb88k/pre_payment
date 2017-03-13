@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
-using log4net;
+//using log4net;
 
 namespace LXS.Common
 {
@@ -20,14 +20,14 @@ namespace LXS.Common
 
         //<add key="ConnectionString" value="server=127.0.0.1;database=DATABASE;uid=sa;pwd=" />	
         public static string connectionString = ConfigurationManager.AppSettings["ConnectionString"];
-        private static readonly ILog logger = LogManager.GetLogger(typeof(DbHelperSQL)); //写日志用对象
+        //private static readonly ILog logger = LogManager.GetLogger(typeof(DbHelperSQL)); //写日志用对象
         //加密的情况
         //public static string connectionString = Mhywy.Common.DEncrypt.DESEncrypt.Decrypt(ConfigurationSettings.AppSettings["ConnectionString"]);
 
         public DbHelperSQL()
         {
         }
-
+        /*
         #region XML-related method create by zk 2013-10-10
 
         /// <summary>
@@ -241,7 +241,7 @@ namespace LXS.Common
         }
 
         #endregion
-
+        */
         #region 公用方法
 
         public static int GetMaxID(string FieldName, string TableName)

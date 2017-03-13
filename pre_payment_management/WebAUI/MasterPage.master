@@ -10,6 +10,7 @@
 
     <title>PrePayment Management Administrator Interface</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="mywebsite.css" rel="stylesheet">
 
 
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -33,7 +34,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Purchase Group Maintenance</a></li>
+            <li><a href="ListPurchaseGroup.aspx">Purchase Group</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->

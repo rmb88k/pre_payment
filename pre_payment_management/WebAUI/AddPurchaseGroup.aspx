@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div id="starter-template" style="margin-top:50px;">
+    <div id="starter-template" >
 
         <!--******************************增加页面代码********************************-->
 
@@ -87,9 +87,9 @@
 		<asp:TextBox id="txtCopyToACC" runat="server" Width="200px"></asp:TextBox>
 	</td></tr>
     
-
+    <tr><td></td><td><asp:Button ID="btInsert" runat="server" Text="Add" OnClick="btInsert_Click" CssClass="btn btn-primary" /></td> </tr>
 </table>
-        <asp:Button ID="btInsert" runat="server" Text="Add" OnClick="btInsert_Click" />
+        
     </div>
 </asp:Content>
 
